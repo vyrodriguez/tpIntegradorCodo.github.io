@@ -1,0 +1,26 @@
+.navbar{
+    background-color: #353a40 !important;
+}
+.color{
+    background-color: #353a40 !important;
+}
+
+.overlay {
+    background-color: #00000065; 
+    display: grid;
+    align-items: end
+}
+
+.footer{
+    background-color: #1c3846;
+}
+
+.btnEnviar{
+    background-color: #96c93e;
+
+}
+
+.fondo{
+    width: max-content;
+    
+}
