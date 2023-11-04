@@ -108,6 +108,7 @@ window.onload = () => {
             }
             total = (200 * datoCantidad) - (200 * promo);
             mensajeTotal.innerText = "Total a pagar: $ " + total;
+            mensajeTotal.classList.remove("alert-danger");
             mensajeTotal.classList.add("alert-primary");
         } else {
             mensajeTotal.innerText = "¡FALTAN COMPLETAR DATOS!";
