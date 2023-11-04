@@ -84,48 +84,52 @@
         <section id=tickets>
             <div class="p m-3 text-center">VENTA</div>
             <div class="h2 mb-3 text-center">VALOR DE TICKET $200</div>
-            <form class="mx-auto col-lg-6 "id="formulariotickets">
+            <form class="mx-auto col-lg-6 "id="formularioTickets">
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                            <p id="mensajeName" class="text-light"></p>
+                            <input type="text" id="inputName" class="form-control" placeholder="Nombre">
+                            <p id="mensajeName" class="text-danger"></p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <input type="text" id="mensajeApellido" class="form-control" placeholder="Apellido">
+                            <input type="text" id="inputApellido" class="form-control" placeholder="Apellido">
+                            <p id="mensajeApellido" class="text-danger"></p>
                         </div>
                     </div>
                 </div>
                 <div class="form-group mt-3">
-                    <input type="email" id="mensajeCorreo" class="form-control" placeholder="Correo">
+                    <input type="email" id="inputCorreo" class="form-control" placeholder="Correo">
+                    <p id="mensajeCorreo" class="text-danger"></p>
                 </div>
                 <div class="row mt-3 mb-3">
                     <div class="col">
                         <div class="form-group">
-                            <small type="message"class="form-text text-black">Cantidad</small>
-                            <input type="text" id="mensajeCantidad" class="form-control" placeholder="Cantidad">
+                            <small type="message" class="form-text text-black">Cantidad</small>
+                            <input type="text" id="inputCantidad" class="form-control" placeholder="Cantidad">
+                            <p id="mensajeCantidad" class="text-danger"></p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
                             <small type="message"class="form-text text-black mb-2">Categoria</small>
-                            <select class="form-control" id="mensajeOpcion">
-                                <option>Seleccione una opción</option>
+                            <select class="form-control" id="inputOpcion">
+                            <option>Seleccione una opción</option>
                               <option>Estudiante</option>
                               <option>Trainee</option>
                               <option>Junior</option>
                             </select>
+                            <p id="mensajeOpcion" class="text-danger"></p>
                         </div>
                     </div>
                 </div>
-                <div class="alert alert-primary" role="alert">
-                    Total a pagar: $
+                <div class="alert " role="alert" id="mensajeTotal" >
+                    
                   </div>
                 <div class="btn col-12">
-                    <button type="submit" class="btn btnEnviar col-5  text-light">Borrar</button>
-                    <button type="submit" class="btn btnEnviar col-5 text-light">Resumen</button>
+                    <button type="button" id="btnBorrar" class="btn btnEnviar col-5  text-light">Borrar</button>
+                    <button type="button"id="btnResumen" class="btn btnEnviar col-5 text-light">Resumen</button>
                 </div>
                
             </form>            
@@ -160,7 +164,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/tickets.js"></script>
+    <script src="/js/tickets.js"></script>
 </body>
 
 
